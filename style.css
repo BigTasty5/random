@@ -5,3 +5,6 @@
 h1 {
     text-align: center;
 }
+body {
+background: radial-gradient(circle,#ff3300,#ff471a,#ff5c33,#00001a);
+}

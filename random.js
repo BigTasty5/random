@@ -4,8 +4,28 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createFirstScene() {
-    
+function createFirstScene(){
+     makeLine(100,100,200,0,"yellow");
+    makeLine(100,100,200,100,"yellow");
+    makeLine(100,100,200,90,"yellow");
+        makeLine(100,100,200,80,"yellow");
+        makeLine(100,100,200,70,"yellow");
+        makeLine(100,100,200,60,"yellow");
+        makeLine(100,100,200,50,"yellow");
+    makeLine(100,100,200,40,"yellow");
+    makeLine(100,100,200,30,"yellow");
+    makeLine(100,100,200,20,"yellow");
+    makeLine(100,100,200,-20,"yellow");
+     makeLine(100,100,200,-40,"yellow");
+     makeLine(100,100,200,-60,"yellow");
+     makeLine(100,100,200,-80,"yellow");
+     makeLine(100,100,200,-100,"yellow");
+     makeLine(100,100,200,-120,"yellow");
+     makeLine(100,100,200,-140,"yellow");
+     makeLine(100,100,200,-160,"yellow");
+     makeLine(100,100,200,-180,"yellow");
+     makeLine(100,100,200,-200,"yellow");
+    makeCircle(100,95,70, "red");
 }
 
 
@@ -13,7 +33,7 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeCircle()
 }
 
 
@@ -21,7 +41,7 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeCircle()
 }
 
 
@@ -34,6 +54,15 @@ function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
     
     // If the number is less than 0.33, call the function to create your first scene.
+    var randomNumder=Math.random()
+        if(randomNumder<.33){
+            createFirstScene()
+        } else if(randomNumder<.67){
+        createSecondScene()
+        }else{
+        createThirdScene()
+        }
+    }
     
     
     
@@ -45,7 +74,7 @@ function createRandomScene() {
     
     
     
-}
+
 
 
 
